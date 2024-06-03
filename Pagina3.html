@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WESTERN-ROUTES (Viajes)</title>
+<link rel="icon" href="logotipo.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="generalStylesP2P3.css">
+<style>
+    .error {
+        color: red;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h2>WESTERN ROUTES -- Formulario de Reserva de Viajes</h2>
+</header>
+
+<section id="contacto"> 
+    <form onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+    
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="fechaNac">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fechaNac" name="fechaNac" required><br>
+
+        <label for="paisNac">País de Nacimiento:</label><br>
+        <input type="text" id="paisNac" name="paisNac" required><br>
+
+        <label for="locNac">Localidad de Nacimiento:</label><br>
+        <input type="text" id="locNac" name="locNac" required><br>
+
+        <label for="TipoDocumentación">Tipo de Documentación:</label><br>
+        <select id="TipoDocumentación" name="TipoDocumentación" required><br>
+            <option value="">Elija una...</option>
+            <option value="DNI">DNI</option>
+            <option value="CI">CI</option>
+            <option value="LC">LC</option>
+            <option value="Pasaporte">Pasaporte</option>
+            <label for="Número de documento">Teléfono</label><br>
+            <input type="number" id="ndc" name="ndc" required><br>
+        </select>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="terminos">Estoy de acuerdo con los términos y condiciones impuestos:</label><br>
+        <input type="checkbox" id="terminos" name="terminos" required><br>
+
+        <label for="arch">Adjunción de archivos:</label><br>
+        <input type="file" id="arch" name="arch" accept="image/*"><br>
+
+        <label for="fechaIda">Fecha de Ida:</label><br>
+        <input type="date" id="fechaIda" name="fechaIda"><br>
+
+        <label for="fechaVuelta">Fecha de Vuelta:</label><br>
+        <input type="date" id="fechaVuelta" name="fechaVuelta"><br>
+
+        <label for="transporte">Transporte:/label><br>
+        <input type="radio" id="tren" name="transporte" value="tren">
+        <label for="recomendacion">Tren</label><br>
+        <input type="radio" id="omnibus" name="transporte" value="omnibus">
+        <label for="queja">Ómnibus</label><br>
+
+        <button type="submit">Enviar Consulta</button>
+    </form>   
+</section>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <link rel="stylesheet" href="footer-effects.css">
+            <h3>WESTERN ROUTES</h3>
+            <p>Somos tu mejor opción para reservar viajes en trenes y colectivos. Ofrecemos una amplia variedad de destinos y horarios para que puedas realizar tus viajes de la manera más cómoda y segura dentro de toda la Union Europea y el Espacio Schengen.</p>
+        </div>
+       
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p><strong>Dirección legal:</strong> Trafalgar Ave 4986 London, United Kingdom
+            <p><strong>Teléfono:</strong> +0044-9836014697 </p>
+            <p><strong>Email:</strong> WesternR@reservasdeviajes.com.en</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <marquee>Copyright 2024 - WESTERN ROUTES. All rights reserved</marquee>
+    </div>   
+    <div class="enlaces">
+        <h3>Encuéntranos aqui!!.</h3>
+        <a href="#"  class="facebook">
+            <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#" class="instagram">
+            <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="#" class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#" class="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>     
+</footer>
+</html>

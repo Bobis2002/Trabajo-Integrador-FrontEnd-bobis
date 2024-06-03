@@ -1,0 +1,36 @@
+footer {
+    background-color:aqua;
+    color:black;
+    padding: 2rem 0;
+}
+.footer-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1920px;
+    margin: auto;
+}
+.footer section {
+    flex: 1;
+    margin-right: 3rem;    
+}
+.footer section h3{
+    font-size: 1.1rem;
+    margin-bottom: 0,9rem;
+}
+.footer section ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li{
+    margin-bottom: 0.6rem;
+}
+.footer-section ul li a{
+    color: lightseagreen;
+    text-decoration: none;
+}
+.footer-bottom{
+    background-color:blue;
+    padding: 1rem 0;
+    text-align: center;
+}

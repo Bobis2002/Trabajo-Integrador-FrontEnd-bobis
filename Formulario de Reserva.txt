@@ -1,0 +1,44 @@
+</section id="contact"> 
+        <form id="formularioDeContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="fechaNac">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNac" name="fechaNac" required>
+
+            <label for="paisNac">País de Nacimiento:</label>
+            <input type="text" id="paisNac" name="paisNac" required>
+
+            <label for="ID">TipoDocumentación:</label>
+            <select id="TipoDocumentación"name="TipoDocumentación" required>
+                <option value="">Elija una...</option>
+                <option value="DNI">DNI</option>
+                <option value="CI">CI</option>
+                <option value="LC">LC</option>
+                <option value="Pasaporte">Pasaporte</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="asunto">Asunto:</label>
+            <textarea id="consulta" name="consulta" required></textarea>
+            <select id="asunto" name="asunto" required>
+                <option value="">Seleccione...</option>
+                <option value="Consulta">Consulta</option>
+                <option value="Reclamo">Reclamo</option>
+                <option value="Recomendación">Recomendación</option>
+            </select>
+
+            <label for="terminos">Acepto los terminos y condiciones:</label>
+            <input type="checkbox" id="terminos" name="terminos">
+
+            <label for="arch">Adjunción de archivos:</label>
+            <input type="file" id="arch" name="arch" accept="image/*">
+            <button type="submit"> Enviar consulta</button>
+            <script src="ValidaciónFormularioContacto.js"></script>            
+        </form>   
+    </section>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WESTERN-ROUTES (Viajes)</title>
+<link rel="icon" href="logotipo.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="generalStylesP2P3.css">
+<style>
+    .error {
+        color: red;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h2>WESTERN ROUTES -- Formulario de Consultas</h2>
+</header>
+
+<form onsubmit=="return validarFormulario()">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad" required><br>
+    
+    <label for="telefono">Teléfono</label><br>
+    <input type="text" id="telefono" name="telefono" required><br>
+    
+    <label for="ciudad">Pais:</label><br>
+    <select id="ciudad" name="ciudad" required>
+        <option value="">Selecciona un pais</option>
+        <option value="Reino Unido">Reino Unido</option>
+        <option value="Francia">Francia</option>
+        <option value="Italia">Italia</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Bélgica">Bélgica</option>
+        <option value="Alemania">Alemania</option>
+        <option value="Liechtenstein">Liechtenstein</option>
+        <option value="Lituania">Lituania</option>
+        <option value="Estonia">Estonia</option>
+        <option value="España">España</option>
+        <option value="Eslovenia">Republica de Eslovenia</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Polonia">Polonia</option>
+        <option value="Noruega">Noruega</option>
+        <option value="Suecia">Suecia</option>
+        <option value="Francia">Francia</option>
+        <option value="Croacia">Croacia</option>
+        <option value="Bosnia">Bosnia</option>
+        <option value="Republica Checa">Republica Checa</option>
+    </select><br>
+    
+    <label for="fecha">Fecha de Viaje:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="motivo">Motivo de la Consulta:</label><br>
+        <input type="radio" id="recomendacion" name="motivo" value="recomendacion">
+        <label for="recomendacion">Recomendación</label><br>
+        <input type="radio" id="queja" name="motivo" value="queja">
+        <label for="queja">Queja</label><br>
+        <input type="radio" id="consulta_general" name="motivo" value="consulta_general">
+        <label for="consulta_general">Consulta General</label><br>
+
+        <label for="preferencias">Preferencias:</label><br>
+        <input type="checkbox" id="avion" name="preferencias" value="omnibus">
+        <label for="omnibus">Ómnibus</label><br>
+        <input type="checkbox" id="tren" name="preferencias" value="tren">
+        <label for="tren">Tren</label><br>
+        <input type="checkbox" id="coche" name="preferencias" value="coche">
+        <label for="coche">Coche</label><br>
+
+        <label for="comentarios">Escriba sus comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+    
+        <button type="submit">Enviar la consulta</button>
+</form>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <link rel="stylesheet" href="footer-effects.css">
+            <h3>WESTERN ROUTES</h3>
+            <p>Somos tu mejor opción para reservar viajes en trenes y colectivos. Ofrecemos una amplia variedad de destinos y horarios para que puedas realizar tus viajes de la manera más cómoda y segura dentro de toda la Union Europea y el Espacio Schengen.</p>
+        </div>
+       
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p><strong>Dirección legal:</strong> Trafalgar Ave 4986 London, United Kingdom
+            <p><strong>Teléfono:</strong> +0044-9836014697 </p>
+            <p><strong>Email:</strong> WesternR@reservasdeviajes.com.en</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <marquee>Copyright 2024 - WESTERN ROUTES. All rights reserved</marquee>
+    </div>   
+    <div class="enlaces">
+        <h3>Encuéntranos aqui!!.</h3>
+        <a href="#"  class="facebook">
+            <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#" class="instagram">
+            <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="#" class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#" class="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>     
+</footer>
+</html>
